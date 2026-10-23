@@ -5,7 +5,7 @@ const MASCOT_PHRASES = [
   "Bienvenue sur mon parcours ! Je suis le guide de Martin.",
   "Martin vient d'entamer son Master 1 en Data & Intelligence Artificielle !",
   "Co-fondateur chez Gama Labs, il conçoit des solutions Full-stack et IA.",
-  "Licence en MIAGE validée avec la mention Très Bien !",
+  "Licence en MIAGE obtenue avec succès à l'UPB !",
   "Chef informaticien du concours Génie UPB depuis 2024.",
 ];
 
@@ -176,7 +176,7 @@ export default function ParcoursSection() {
               <div className="pcd">
                 <span className="mono">2021 – 2024</span>
                 <b>Licence en MIAGE</b>
-                <div className="seal" title="Licence obtenue avec la mention Très Bien">
+                <div className="seal" title="Diplômé de licence">
                   <div>
                     <svg viewBox="0 0 64 48" aria-hidden="true">
                       <path d="M32 4L62 18L32 32L2 18Z" fill="#0B0B0C" />
@@ -184,13 +184,11 @@ export default function ParcoursSection() {
                       <path d="M58 19V34" stroke="#0B0B0C" strokeWidth="3" strokeLinecap="round" />
                       <circle cx="58" cy="37" r="4" fill="#fff" stroke="#0B0B0C" strokeWidth="2" />
                     </svg>
-                    <b>Mention</b>
-                    <b>Très Bien</b>
                   </div>
                 </div>
                 <span className="og">Université Polytechnique de Bingerville</span>
                 <p>
-                  Méthodes informatiques appliquées à la gestion des entreprises. Obtenue avec la mention Très Bien.
+                  Méthodes informatiques appliquées à la gestion des entreprises.
                 </p>
               </div>
 

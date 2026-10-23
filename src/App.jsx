@@ -10,6 +10,7 @@ import ApprocheSection from './components/ApprocheSection.jsx';
 import CompetencesSection from './components/CompetencesSection.jsx';
 import ProjetsSection from './components/ProjetsSection.jsx';
 import ParcoursSection from './components/ParcoursSection.jsx';
+import GalerieSection from './components/GalerieSection.jsx';
 import GamaSection from './components/GamaSection.jsx';
 import CertifsSection from './components/CertifsSection.jsx';
 import ContactSection from './components/ContactSection.jsx';
@@ -33,6 +34,7 @@ export default function App() {
         <CompetencesSection />
         <ProjetsSection />
         <ParcoursSection />
+        <GalerieSection />
         <GamaSection />
         <CertifsSection />
         <ContactSection />

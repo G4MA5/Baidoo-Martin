@@ -1,142 +1,21 @@
 import React from 'react';
+import ToolsNetwork from './ToolsNetwork.jsx';
 
 export default function CompetencesSection() {
   return (
     <>
       <div className="blk dots">
         <div className="w">
-          <section className="sec tg" id="competences">
-            <span className="mono">03 — Compétences & méthode</span>
-            <h2>Mes outils, ma façon de travailler.</h2>
+          <section className="sec" id="competences">
+            <span className="mono">03 — Compétences &amp; méthode</span>
+            <h2>Mes outils, tous reliés.</h2>
+            <p className="nsub">
+              Ils ne vivent pas chacun dans leur coin. Survolez ou cliquez sur un outil, ou choisissez un scénario, pour voir comment tout fonctionne ensemble.
+            </p>
 
-            <div>
-              <span className="mono m">Développement</span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-typescript" />
-                </svg>
-                TypeScript
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-java" />
-                </svg>
-                Java
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-python" />
-                </svg>
-                Python
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-flutter" />
-                </svg>
-                Flutter
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-html5" />
-                </svg>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-css3" />
-                </svg>
-                HTML &amp; CSS
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-tailwindcss" />
-                </svg>
-                Tailwind CSS
-              </span>
-            </div>
+            <ToolsNetwork />
 
-            <div style={{ marginTop: '14px' }}>
-              <span className="mono m">Data &amp; BI</span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-db" />
-                </svg>
-                SQL
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-chart" />
-                </svg>
-                Analyse de données
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-powerbi" />
-                </svg>
-                Power BI
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-excel" />
-                </svg>
-                Excel
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-r" />
-                </svg>
-                R Studio
-              </span>
-            </div>
-
-            <div style={{ marginTop: '14px' }}>
-              <span className="mono m">Outils</span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-git" />
-                </svg>
-                Git
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-github" />
-                </svg>
-                GitHub
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-n8n" />
-                </svg>
-                n8n
-              </span>
-            </div>
-
-            <div style={{ marginTop: '14px' }}>
-              <span className="mono m">Systèmes, réseaux &amp; IoT</span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-chip" />
-                </svg>
-                IoT &amp; systèmes embarqués
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-net" />
-                </svg>
-                Réseaux &amp; intranet
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-server" />
-                </svg>
-                Administration système
-              </span>
-              <span>
-                <svg className="lg" aria-hidden="true">
-                  <use href="#i-server" />
-                </svg>
-                Serveurs
-              </span>
-            </div>
-
-            <div className="stp">
+            <div className="stp" style={{ marginTop: '56px' }}>
               <div>
                 <span className="mono">Étape 1</span>
                 <b>Analyse du besoin</b>

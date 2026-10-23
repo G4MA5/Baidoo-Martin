@@ -4,6 +4,7 @@ const navItems = [
   { href: '#apropos', label: 'À propos' },
   { href: '#projets', label: 'Projets' },
   { href: '#gama', label: 'Gama Labs' },
+  { href: '#galerie', label: 'Galerie' },
   { href: '#certifs', label: 'Certifications' },
   { href: '#contact', label: 'Contact' },
 ];
