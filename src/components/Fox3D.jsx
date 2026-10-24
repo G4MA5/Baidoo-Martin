@@ -173,7 +173,13 @@ export default function Fox3D() {
     window.addEventListener('resize', size);
     if (box) box.classList.add('ok');
 
-    let px = 0, py = 0, tx = 0, ty = 0, vis = true, nb = 2000;
+    let px = 0, py = 0, tx = 0, ty = 0, vis = true, nb = 2000, jp = -9999;
+    cv.style.cursor = 'pointer';
+    const handleFoxClick = () => {
+      jp = performance.now();
+      window.dispatchEvent(new Event('foxjump'));
+    };
+    cv.addEventListener('click', handleFoxClick);
     const handlePointerMove = (e) => {
       px = ((e.clientX / window.innerWidth) - 0.5) * 2;
       py = ((e.clientY / window.innerHeight) - 0.5) * 2;
@@ -197,8 +203,10 @@ export default function Fox3D() {
       if (!vis) return;
       tx += (px - tx) * 0.06;
       ty += (py - ty) * 0.06;
-      m.G.position.y = Math.sin(t * 0.0016) * 0.04;
-      m.G.rotation.y = tx * 0.3;
+      const jt = (t - jp) / 800;
+      const jj = jt >= 0 && jt < 1;
+      m.G.position.y = Math.sin(t * 0.0016) * 0.04 + (jj ? Math.sin(jt * Math.PI) * 1.1 : 0);
+      m.G.rotation.y = tx * 0.3 + (jj ? jt * 6.2832 : 0);
       m.HG.rotation.y = tx * 0.35;
       m.HG.rotation.x = ty * 0.18;
       m.HG.rotation.z = tx * -0.05;
@@ -229,6 +237,7 @@ export default function Fox3D() {
       cancelAnimationFrame(animId);
       window.removeEventListener('resize', size);
       window.removeEventListener('pointermove', handlePointerMove);
+      cv.removeEventListener('click', handleFoxClick);
       observer.disconnect();
       r.dispose();
     };
